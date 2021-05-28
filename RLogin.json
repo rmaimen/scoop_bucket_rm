@@ -1,0 +1,47 @@
+{
+    "homepage": "https://kmiya-culti.github.io/RLogin/",
+    "version": "1.82",
+    "license": "MIT",
+    "description": "RLogin",
+    "architecture":{
+        "64bit":{
+            "url": "https://github.com/kmiya-culti/RLogin/files/6430626/rlogin_x64.zip",
+            "hash": "38c0fead7375ff4d1a7e5bfa4db75656d7d7849392da7ccaa8340c60f90ac679",
+            "extract_dir": "rlogin_x64"
+        },
+        "32bit":{
+            "url": "https://github.com/kmiya-culti/RLogin/files/6430623/rlogin_x32.zip",
+            "hash": "38c0fead7375ff4d1a7e5bfa4db75656d7d7849392da7ccaa8340c60f90ac679",
+            "extract_dir": "rlogin_x32"
+        }
+    },
+    
+    "shortcuts": [
+        [
+            "RLogin.exe",
+            "RLogin"
+        ]
+    ],
+    "post_install": [
+        "",
+        "$shortcuts = @(arch_specific 'shortcuts' $manifest $arch)",
+        "$shortcutName = $shortcuts[0].item(1)",
+        "$scoop_startmenu_folder = shortcut_folder $global",
+        "$wsShell = New-Object -ComObject WScript.Shell",
+        "$shortcut = $wsShell.CreateShortcut(\"$scoop_startmenu_folder\\$shortcutName.lnk\")",
+        "$shortcut.WorkingDirectory = \"$dir\"",
+        "$shortcut.Save()",
+        ""
+    ],
+    "checkver": {
+        "github": "https://github.com/kmiya-culti/RLogin/releases/"
+    },
+    "autoupdate": {
+        "64bit":{
+            "url": "http://nanno.dip.jp/softlib/program/rlogin.zip"
+        },
+        "32bit":{
+            "url": "http://nanno.dip.jp/softlib/program/rlogin_x64.zip"
+        }
+    }
+}

@@ -1,16 +1,16 @@
 {
     "homepage": "https://kmiya-culti.github.io/RLogin/",
-    "version": "2.26.0",
+    "version": "2.26.1",
     "license": "MIT",
     "description": "RLogin",
     "architecture":{
         "64bit":{
-            "url": "http://nanno.dip.jp/softlib/program/rlogin_x64.zip",
+            "url": "https://github.com/kmiya-culti/RLogin/files/6430626/rlogin_x64.zip",
             "hash": "",
             "extract_dir": "rlogin_x64"
         },
         "32bit":{
-            "url": "http://nanno.dip.jp/softlib/program/rlogin.zip",
+            "url": "https://github.com/kmiya-culti/RLogin/files/6430623/rlogin_x32.zip",
             "hash": "",
             "extract_dir": "rlogin_x32"
         }

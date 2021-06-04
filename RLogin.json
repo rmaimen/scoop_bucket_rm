@@ -7,12 +7,12 @@
         "64bit":{
             "url": "https://github.com/kmiya-culti/RLogin/files/6430626/rlogin_x64.zip",
             "hash": "",
-            "extract_dir": "rlogin_x64"
+            "extract_dir": "rlogin"
         },
         "32bit":{
             "url": "https://github.com/kmiya-culti/RLogin/files/6430623/rlogin_x32.zip",
             "hash": "",
-            "extract_dir": "rlogin_x32"
+            "extract_dir": "rlogin"
         }
     },
     "shortcuts": [

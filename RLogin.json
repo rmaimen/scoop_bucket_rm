@@ -1,18 +1,19 @@
 {
     "homepage": "https://kmiya-culti.github.io/RLogin/",
-    "version": "2.26.1",
+    "version": "2.26.2",
     "license": "MIT",
     "description": "RLogin",
-    "architecture":{
-        "64bit":{
-            "url": "https://github.com/kmiya-culti/RLogin/files/6430626/rlogin_x64.zip",
-            "hash": ""
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/kmiya-culti/RLogin/files/6722418/rlogin_x64.zip",
+            "hash": "97da03f3a0fbf3570d0fdca5aac1baafd19c860b967b9bbed071667293e2aaa2"
         },
-        "32bit":{
-            "url": "https://github.com/kmiya-culti/RLogin/files/6430623/rlogin_x32.zip",
-            "hash": ""
+        "32bit": {
+            "url": "https://github.com/kmiya-culti/RLogin/files/6722417/rlogin_x32.zip",
+            "hash": "6a4953827d543bf8ccf81a190e01e7c7bf60bf761d4f8ebf4df67c393e593916"
         }
     },
+    "bin": "RLogin.exe",
     "shortcuts": [
         [
             "RLogin.exe",
@@ -31,14 +32,18 @@
         ""
     ],
     "checkver": {
-        "github": "https://github.com/kmiya-culti/RLogin/"
+        "url": "https://mwlab.net/scoop.cgi",
+        "re": "rLogin:(?<version>.*):32bit=(?<x32>[\\d]*):64bit=(?<x64>[\\d]*)",
+        "replace": "${version}"
     },
     "autoupdate": {
-        "64bit":{
-            "url": "http://nanno.dip.jp/softlib/program/rlogin_x64.zip"
-        },
-        "32bit":{
-            "url": "http://nanno.dip.jp/softlib/program/rlogin.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/kmiya-culti/RLogin/files/$matchX64/rlogin_x64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/kmiya-culti/RLogin/files/$matchX32/rlogin_x32.zip"
+            }
         }
     }
 }

@@ -5,6 +5,7 @@
     "description": "Binary Editor Bz",
     "url": "https://gitlab.com/devill.tamachan/binaryeditorbz/uploads/89cefbf7a4895a47c04d24b56df4f0a1/Bz1986Portable.zip",
     "hash": "cec1f1fc1da579c80e464b9be9c4506fa41aa8058efcb4ea1eb2b1a9636c3e76",
+    "extract_dir": "bz1986Portable",
     "bin": "Bz64.exe",
     "shortcuts": [
         [
@@ -29,6 +30,7 @@
         "replace": "${version}"
     },
     "autoupdate": {
-        "url": "https://gitlab.com$matchUrl"
+        "url": "https://gitlab.com$matchUrl",
+        "extract_dir": "bz$majorVersion$minorVersion$patchVersion$buildVersionPortable"
     }
 }

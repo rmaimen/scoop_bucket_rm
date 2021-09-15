@@ -12,7 +12,7 @@
         "64bit": {
             "installer": {
                 "script": [
-                    "Expand-InnoArchive \"$dir\\HxDPortableSetup.exe /LANG=japanese\" -Removal",
+                    "Expand-InnoArchive \"$dir\\HxDPortableSetup.exe\" -Removal",
                     "Rename-Item \"$dir\\HxD64,7.exe\" \"$dir\\HxD.exe\"",
                     "Remove-Item \"$dir\\*,*\" -Force"
                 ]

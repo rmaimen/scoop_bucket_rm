@@ -3,8 +3,8 @@
     "description": "Chat, voice, video, and file transfer IM client using the encrypted peer-to-peer Tox protocol.",
     "homepage": "https://github.com/namazso/OpenHashTab",
     "license": "GPL-3.0-or-later",
-    "url": "https://gitlab.com/devill.tamachan/binaryeditorbz/uploads/89cefbf7a4895a47c04d24b56df4f0a1/Bz1986Portable.zip",
-    "hash": "cec1f1fc1da579c80e464b9be9c4506fa41aa8058efcb4ea1eb2b1a9636c3e76",
+    "url": "https://github.com/namazso/OpenHashTab/releases/download/v3.0.1/OpenHashTab_setup_user.exe",
+    "hash": "39f777e93ceb205fb008c936555a13d9a9aeef46e2bdc77b128f1366cb026df0",
     "innosetup": true,
     "checkver": {
         "github": "https://github.com/namazso/OpenHashTab",

@@ -31,6 +31,9 @@
         "$shortcut.Save()",
         ""
     ],
+    "persist": [
+        "RLogin.ini"
+    ],
     "checkver": {
         "url": "https://mwlab.net/scoop.cgi",
         "re": "rLogin:(?<version>.*):32bit=(?<x32>[\\d]*):64bit=(?<x64>[\\d]*)",

@@ -4,7 +4,7 @@
     "version": "2.012",
     "url": "https://github.com/adobe-fonts/source-han-code-jp/archive/2.012R.zip",
     "hash": "bedc74973220f1ce4bb16e1fa64a46604c3164bf95b62fa48c8a046dd468d6ef",
-    "extract_dir": "source-han-code-jp-$versionR",
+    "extract_dir": "source-han-code-jp-2.012R",
     "installer": {
         "script": [
             "Get-ChildItem $dir\\OTF -filter '*.otf' | ForEach-Object {",
@@ -22,9 +22,5 @@
             "   Remove-Item \"$fontdir\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
             "}"
         ]
-    },
-    "checkver": "github",
-    "autoupdate": {
-        "url": "https://github.com/adobe-fonts/source-han-code-jp/archive/$versionR.zip"
     }
 }

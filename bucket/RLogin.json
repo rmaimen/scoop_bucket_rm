@@ -1,16 +1,16 @@
 {
     "homepage": "https://kmiya-culti.github.io/RLogin/",
-    "version": "2.27.5",
+    "version": "2.27.7",
     "license": "MIT",
     "description": "RLogin",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kmiya-culti/RLogin/files/9933393/rlogin_x64.zip",
-            "hash": "da4d46c4058b6e5a1605f52876067558fd1b7bc948873bde2355ecb83fea86aa"
+            "url": "https://github.com/kmiya-culti/RLogin/files/10702257/rlogin_x64.zip",
+            "hash": "153098eb7bff3af9b6a98b7e6a5ca43f3783567a0d470af49d123477c7615e0a"
         },
         "32bit": {
-            "url": "https://github.com/kmiya-culti/RLogin/files/9933392/rlogin_x32.zip",
-            "hash": "ffd9653e01a0d7bfb0332748020260dfbb1000f8bf4ea14d1f113c6ff1a0a717"
+            "url": "https://github.com/kmiya-culti/RLogin/files/10702253/rlogin_x32.zip",
+            "hash": "42805c745f62ad229653f6cc4620d113a4613406c36e1e10e06c002d0a741765"
         }
     },
     "bin": "RLogin.exe",
@@ -19,6 +19,13 @@
             "RLogin.exe",
             "RLogin"
         ]
+    ],
+    "pre_install": [
+        "$ini = \"$dir\\RLogin.ini\"",
+        "if (!(Test-Path \"$ini\")) {",
+        "   # Using $dir instead of $persist_dir, causes this error:",
+        "   Add-Content -Path \"$ini\" -Value \"\"",
+        "}"
     ],
     "post_install": [
         "",

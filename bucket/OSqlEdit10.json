@@ -17,7 +17,21 @@
     "pre_install": [
         "if((Test-Path(\"$env:TEMP\\__scoop__preserved\"))) { Write-Output \"[pre_install] Removing temporary preserved folder\"; Remove-Item \"$env:TEMP\\__scoop__preserved\" -Recurse -Force }",
         "Write-Output \"[pre_install] Creating temporary preserved folder\"; New-Item \"$env:TEMP\\__scoop__preserved\" -type directory | Out-Null",
-        "Write-Output \"[pre_install] Preserving original files\"; Copy-Item \"$dir\\*\" \"$env:TEMP\\__scoop__preserved\" -Recurse -Force"
+        "Write-Output \"[pre_install] Preserving original files\"; Copy-Item \"$dir\\*\" \"$env:TEMP\\__scoop__preserved\" -Recurse -Force",
+        "$osqlgrid = \"$dir\\osqlgrid.exe\"",
+        "if (!(Test-Path \"$osqlgrid\")) {",
+        "   # Using $dir instead of $persist_dir, causes this error:",
+        "   Add-Content -Path \"$osqlgrid\" -Value \"\"",
+        "}"
+    ],
+    "persist": [
+        "data",
+        "sql_lib",
+        "userdata",
+        [
+            "osqlgrid.exe",
+            "userdata\\osqlgrid.exe"
+        ]
     ],
     "post_install": [
         "Write-Output \"[post_install] Overwriting from original files\"; Copy-Item \"$env:TEMP\\__scoop__preserved\\*\" \"$dir\" -Recurse -Force",

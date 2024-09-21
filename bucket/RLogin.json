@@ -1,16 +1,16 @@
 {
     "homepage": "https://kmiya-culti.github.io/RLogin/",
-    "version": "2.29.4",
+    "version": "2.29.7",
     "license": "MIT",
     "description": "RLogin",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kmiya-culti/RLogin/files/15370901/rlogin_x64.zip",
-            "hash": "4643593badd14c6850f3dc832056f3e1e704f9a818e35d5c476482149001371b"
+            "url": "https://github.com/kmiya-culti/RLogin/releases/download/2.29.7/rlogin_x64.zip",
+            "hash": "f21d9e2635a08a94b3cd1e90491a103ea44242d783b95e855e80dea381d42938"
         },
         "32bit": {
-            "url": "https://github.com/kmiya-culti/RLogin/files/15370900/rlogin_x32.zip",
-            "hash": "5404b29637d27c02a87ce03244d2f682c966566032ea97f99636ce56cad5a3c7"
+            "url": "https://github.com/kmiya-culti/RLogin/releases/download/2.29.7/rlogin_x32.zip",
+            "hash": "f84ed3975f861a25042d8397332ea9b09687b217c6e3135e23fad5ca43d4b316"
         }
     },
     "bin": "RLogin.exe",
@@ -46,17 +46,16 @@
         ]
     ],
     "checkver": {
-        "url": "https://mwlab.net/scoop.cgi",
-        "re": "rLogin:(?<version>.*):32bit=(?<x32>[\\d]*):64bit=(?<x64>[\\d]*)",
-        "replace": "${version}"
+        "url": "https://github.com/kmiya-culti/RLogin/releases",
+        "re": "/releases/tag/([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/kmiya-culti/RLogin/files/$matchX64/rlogin_x64.zip"
+                "url": "https://github.com/kmiya-culti/RLogin/releases/download/$version/rlogin_x64.zip"
             },
             "32bit": {
-                "url": "https://github.com/kmiya-culti/RLogin/files/$matchX32/rlogin_x32.zip"
+                "url": "https://github.com/kmiya-culti/RLogin/releases/download/$version/rlogin_x32.zip"
             }
         }
     }

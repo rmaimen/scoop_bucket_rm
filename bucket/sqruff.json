@@ -1,12 +1,12 @@
 {
     "homepage": "https://github.com/quarylabs/sqruff/",
-    "version": "0.25.21",
+    "version": "0.26.6",
     "license": "MIT",
     "description": "sqruff is a SQL linter and formatter written in Rust",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/quarylabs/sqruff/releases/download/v0.25.21/sqruff-windows-x86_64.zip",
-            "hash": "1cc6edf023efdda3fbea613e2f532fa24e2912b03736dff50baae3416826b911"
+            "url": "https://github.com/quarylabs/sqruff/releases/download/v0.26.6/sqruff-windows-x86_64.zip",
+            "hash": "d6db50952f73a3173c8799115580bc1c6b122ef22f410a21471eab1e93009601"
         }
     },
     "bin": "sqruff.exe",

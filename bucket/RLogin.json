@@ -1,16 +1,16 @@
 {
     "homepage": "https://kmiya-culti.github.io/RLogin/",
-    "version": "2.31.2",
+    "version": "2.31.4",
     "license": "MIT",
     "description": "RLogin",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kmiya-culti/RLogin/releases/download/2.31.2/rlogin_x64.zip",
-            "hash": "504333f53603ea2b0bb02f7d94ecd334a6698e8043b9a21809a61096a1a95aab"
+            "url": "https://github.com/kmiya-culti/RLogin/releases/download/2.31.4/rlogin_x64.zip",
+            "hash": "a54de670f366343771d70e1159e174e3b4610e13532ad79d6a9d0755e58e850d"
         },
         "32bit": {
-            "url": "https://github.com/kmiya-culti/RLogin/releases/download/2.31.2/rlogin_x32.zip",
-            "hash": "7da7fa842dc1a2ba899295541906331d8f78c7d4fec0aa7e1f4f28b36b02b700"
+            "url": "https://github.com/kmiya-culti/RLogin/releases/download/2.31.4/rlogin_x32.zip",
+            "hash": "032957f567e2956f0f07374bcaffdc0dce51b40b7d99db21e10712fb6869a3be"
         }
     },
     "bin": "RLogin.exe",

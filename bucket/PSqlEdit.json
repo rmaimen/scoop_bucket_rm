@@ -39,7 +39,11 @@
     "shortcuts": [
         [
             "psqledit.exe",
-            "PSqlEdit"
+            "psqledit"
+        ],
+        [
+            "psqlgrid.exe",
+            "psqlgrid"
         ]
     ],
     "checkver": {
